@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PagPrincipal.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="PagPrincipal.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="Musicas"><audio autoplay="autoplay" hidden="hidden" loop="true" onclick="setTimeout(joao, 30);"> <source src="Sounds/MusiquinhaTsu.mp3" type="audio/mpeg"> </audio></div>
+    <header class="header">
+        <div class="logo"></div>
+        <div class="SejaBemVindo">
+            <p class="Bemvindo">Bem vindo(a) a Ingames! Sinta-se livre para compartilhar os seus jogos!<a href="#" id="AdcionarProjeto">Adcionar projeto!</a></p>
+        </div>
+        <input type="text" placeholder="Busque aqui">
+        <a href="Profile.html" class="Icone"></a>
+        <div class="Setinha" id="Setinhagira" onclick="">&#10094;</div>
+    </header>
+    <div class="Recomendadosedestaques"><img src="/Images/RecomendadosEDestaques.png" alt=""></div>
+    <div class="Bolinhasfofas"><img src="/Images/BolinhasFofas.png" alt=""></div>
+<main>
+    <div class="CaixaCarrossel">
+        <div class="Carrossel fade">
+            <img src="Images/Tiljolos.png" style="width:100%">
+        </div>
+        <div class="Carrossel fade">
+            <img src="Images/ryonusuke.jpg" style="width:100%">
+        </div>
+        <div class="Carrossel fade">
+            <img src="Images/Unisinos.jpg" style="width:100%">
+        </div>
+    </div>
+    </div>
+    
+</main>
+<div class="BarrinhaShow">
+    <a class="Anterior" onclick="ImagemX(-1)">&#10094;</a>
+    <a class="Posterior" onclick="ImagemX(1)">&#10095;</a>
+    <div class="bolinha" onclick="ImagemAtual(1)"></div>
+    <div class="bolinha" onclick="ImagemAtual(2)"></div>
+    <div class="bolinha" onclick="ImagemAtual(3)"></div>
+</div>
+</body>
+</html>
