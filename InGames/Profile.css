@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(#f07501, #FF0944, #ff0f43);
+    background-position: fixed;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 1vh;
+    background: #1e23aa77;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    z-index: 5;
+}
+
+.Icone {
+    width: 6.5vh;
+    height: 6.5vh;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-left: 50vh;  
+    background-color: white;
+}
+
+
+.Setinha {
+    position: absolute;
+    right: 2.5vw;
+    top: 2vh;
+    cursor: pointer;
+    margin-left: 0vw;
+    text-align: center;
+    font-size: 2.5vh;
+    color: #ffff;
+    animation-fill-mode: forwards;
+}
+
+.Setinha:active {
+    transition: 0.3s ease-in-out;
+    transform: rotate(270deg);
+}
+
+.Setinha:active {
+    animation-name: girandinho;
+    animation-composition: replace;
+    animation-duration: 500ms;
+    animation-iteration-count: default;
+    animation-timing-function: linear; 
+    cursor: pointer;
+}
+
+
+.logo {
+    padding-right: none;
+}
+
+.header a{
+    margin-right: none;
+}
+
+
+.header input[type=text] {
+    /* float: right; */
+    /* padding-: 0.5vh; */
+    border: none;
+    width: 70vh;
+    height: 35px;
+    margin-left: 40vh;
+    background-color: #5E5E5E;
+    border-radius: 1.2vh;
+    font-size: medium;
+    color: #A3A3A3;
+    padding-left: 2.5vh;
+}
+
+input:placeholder-shown {
+    color: #A3A3A3;
+    font-size: medium;
+    font-style: italic;
+    padding-left: 2.5vh;
+}
+
+
+.GridQuadrados {
+    display:grid;
+    grid-template-columns: 0 0 0 0 0 0 0 0 0 0 ;
+    column-gap: 28vh;
+    row-gap: 8vh;
+    rotate: 0deg;
+    mix-blend-mode: color-burn;
+    /* background-image: url(./Images/BananaGira.gif);
+    background-size: 20%; */
+}
+
+
+
+
+.Q {
+    background-color: transparent;
+    /* padding: 0; */
+    border-style:solid;
+    border-color: #c711f5;
+    /* border-width:  ; */
+    height: 20vh;
+    width: 20vh;
+    rotate: -45deg;
+    
+}
+/* .Quadrados {
+    display: grid;
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    top: 0vh;
+    left: 0vh;
+    background-color: #919191;
+    rotate: 0deg;
+} */
+
+
+.GridQuadrados {
+    animation-name: Moving;
+animation-duration: 90s;
+animation-iteration-count: infinite;
+animation-timing-function: linear; 
+}
+
+@keyframes Moving {
+    from {
+        transform:translateY(0%);
+    }
+    50% {
+        transform:translateY(-50%);
+    }
+    100% {
+        transform:translateY(0%);
+    }
+}
+
